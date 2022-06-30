@@ -1,0 +1,65 @@
+.b-total {
+    padding: 40px 38px 42px;
+    background: #f5f3f3;
+    box-sizing: border-box;
+
+    @media (min-width: $width_sm) {
+        padding: 40px 44px 42px;
+    }
+
+    @media (min-width: $width_md) {
+        width: 360px;
+    }
+
+    &__subText {
+        text-align: right;
+        font-size: 11px;
+        line-height: 13px;
+        color: #4a4a4a;
+    }
+
+    &__subPrice {
+        margin-left: 20px;
+    }
+
+    &__grandText {
+        text-align: right;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+    }
+
+    &__grandPrice {
+        color: #f16d7f;
+        margin-left: 20px;
+    }
+
+    &__grandText:not(:first-child) {
+        margin-top: 12px;
+    }
+
+    &__sep {
+        margin-top: 21px;
+        margin-bottom: 17px;
+        background-color: #e2e2e2;
+        height: 1px;
+        border: none;
+    }
+
+    &__button {
+        width: 100%;
+        max-width: 273px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        padding: 15px;
+        background-color: #f16d7f;
+        border: none;
+
+        &:hover {
+            background-color: #E05C6E;
+        }
+    }
+}

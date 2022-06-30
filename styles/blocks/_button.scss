@@ -1,0 +1,27 @@
+.b-button {
+    width: 148px;
+    display: block;
+    padding: 9px 0;
+    text-decoration: none;
+    text-align: center;
+    color: #575757;
+    font-size: 12px;
+    line-height: 14px;
+    border: 1px solid #a4a4a4;
+    box-sizing: border-box;
+    cursor: default;
+
+    @media (min-width: $width_sm) {
+        width: 175px;
+    }
+
+    @media (min-width: $width_md) {
+        width: 235px;
+        padding: 16px 0;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 300;
+    }
+}

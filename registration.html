@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stile.css">
+    <link rel="stylesheet" href="catalog.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="styles/cart.css">
+    <link rel="stylesheet" href="registration.css">
+
+    <title>Registration</title>
+</head>
+
+<body>
+
+    <header class="top">
+        <div class="header container">
+            <div class="headerLeft">
+                <a href="index.html">
+                    <img class="logoImg" src="img/logo.svg" alt="logo">
+                </a>
+                <a href="#">
+                    <img class="searchImg" src="img/search.svg" alt="search">
+                </a>
+            </div>
+            <div class="headerRight">
+                <a href="#">
+                    <img class="barImg" src="img/bar.svg" alt="bar">
+                </a>
+                <a href="registration.html">
+                    <img class="userImg" src="img/user.svg" alt="user">
+                </a>
+                <div class="cart">
+                    <a href="cart.html">
+                        <img class="cartImg" src="img/cart.svg" alt="cart">
+                    </a>
+                    <div class="cartNumber">5</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="b-mainTitle">
+            <div class="b-mainTitle__content b-mainTitle__content_pageCart">
+                <div class="b-mainTitle__caption">REGISTRATION</div>
+            </div>
+            <div class="blackout menuHide">
+                <div class="menu">
+                    <img class="menuClouse" src="img/menu_close.svg" alt="close">
+                    <div class="menuTitle">
+                        MENU
+                    </div>
+                    <div class="menuItem">
+                        <div class="itemHeader">
+                            MAN
+                        </div>
+                        <a href="#">Accessories</a>
+                        <a href="#">Bags</a>
+                        <a href="#">Denim</a>
+                        <a href="#">T-Shirts</a>
+                    </div>
+                    <div class="menuItem">
+                        <div class="itemHeader">
+                            WOMAN
+                        </div>
+                        <a href="#">Accessories</a>
+                        <a href="#">Jackets & Coats</a>
+                        <a href="#">Polos</a>
+                        <a href="#">T-Shirts</a>
+                        <a href="#">Shirts</a>
+                    </div>
+                    <div class="menuItem">
+                        <div class="itemHeader">
+                            KIDS
+                        </div>
+                        <a href="#">Accessories</a>
+                        <a href="#">Jackets & Coats</a>
+                        <a href="#">Polos</a>
+                        <a href="#">T-Shirts</a>
+                        <a href="#">Shirts</a>
+                        <a href="#">Bags</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerReg">
+            <div class="formWrap">
+                <div class="b-form">
+                    <div class="b-form__title">Your Name</div>
+                    <input class="b-form__input" type="text" name="firstName" placeholder="First Name">
+                    <input class="b-form__input" type="text" name="lastName" placeholder="Last Name">
+                    <div class="genderWrap">
+                        <input class="b-form__radio" name="gender" id="radioMale" type="radio" value="Male">
+                        <label class="b-form__radioLabel" for="radioMale">Male</label>
+                        <input class="b-form__radio" name="gender" id="radioFemale" type="radio" value="Female">
+                        <label class="b-form__radioLabel" for="radioFemale">Female</label>
+                    </div>
+                    <div class="b-form__title">Login details</div>
+                    <input class="b-form__input" type="text" name="email" placeholder="Email">
+                    <input class="b-form__input" type="text" name="password" placeholder="Password">
+                    <div class="b-form__comment">
+                        Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
+                    </div>
+
+                    <button class="b-button joinButton">JOIN NOW<img src="img/registration/arrow_left.svg" alt="left"></button>
+                </div>
+            </div>
+            <div class="loyaltyWrap">
+                <div class="loyaltyTitle">
+                    LOYALTY HAS ITS PERKS
+                </div>
+                <div class="loyaltyText">
+                    Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:
+                </div>
+                <div class="loyaltyPlus">
+                    15% off welcome offer
+                </div>
+                <div class="loyaltyPlus">
+                    Free shipping, returns and exchanges on all orders
+                </div>
+                <div class="loyaltyPlus">
+                    $10 off a purchase on your birthday
+                </div>
+                <div class="loyaltyPlus">
+                    Early access to products
+                </div>
+                <div class="loyaltyPlus">
+                    Exclusive offers & rewards
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="subscribe">
+            <div class="container">
+                <div class="subscribeLeft">
+                    <img src="img/subcribe_face.png" alt="subcribe">
+                    <div class="subscribeText">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <em>a pulvinar purus condimentum</em>“</div>
+                </div>
+                <div class="subscribeRight">
+                    <div class="subscribeTitle">
+                        SUBSCRIBE
+                    </div>
+                    <div class="subscribeText">
+                        FOR OUR NEWLETTER AND PROMOTION
+                    </div>
+                    <form action="#" class="subscribeForm">
+                        <input type="email" placeholder="Enter Your Email">
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footerNetworks">
+                <a href="">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+            <div class="footerCopy">
+                &copy; 2021  Brand  All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

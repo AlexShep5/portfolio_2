@@ -1,0 +1,113 @@
+.containerReg {
+  margin: 0 9px;
+  max-width: 1140px;
+}
+
+@media (min-width: 768px) {
+  .containerReg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 16px;
+  }
+}
+
+@media (min-width: 1172px) {
+  .containerReg {
+    margin: 0 auto;
+  }
+}
+
+.formWrap {
+  margin-top: 40px;
+}
+
+@media (min-width: 1172px) {
+  .formWrap {
+    margin-top: 64px;
+  }
+}
+
+.genderWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.joinButton {
+  width: 167px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  padding: 16px 28px;
+  background-color: #f16d7f;
+  border: none;
+  margin-top: 39px;
+}
+
+.joinButton img {
+  margin-left: 20px;
+}
+
+.joinButton:hover {
+  background-color: #E05C6E;
+}
+
+.loyaltyWrap {
+  margin-top: 40px;
+  margin-bottom: 96px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  .loyaltyWrap {
+    width: 354px;
+    margin-bottom: 274px;
+  }
+}
+
+@media (min-width: 1172px) {
+  .loyaltyWrap {
+    font-size: 24px;
+    line-height: 29px;
+    width: 652px;
+    margin-top: 64px;
+  }
+}
+
+.loyaltyWrap .loyaltyText {
+  margin-top: 32px;
+}
+
+.loyaltyWrap .loyaltyPlus {
+  height: 37px;
+  position: relative;
+  padding-left: 40px;
+}
+
+.loyaltyWrap .loyaltyPlus:nth-child(3) {
+  margin-top: 22px;
+}
+
+.loyaltyWrap .loyaltyPlus:nth-child(n + 4) {
+  margin-top: 16px;
+}
+
+.loyaltyWrap .loyaltyPlus::before {
+  content: url(img/registration/checked.svg);
+  position: absolute;
+  left: 0px;
+  top: 6px;
+}
+/*# sourceMappingURL=registration.css.map */

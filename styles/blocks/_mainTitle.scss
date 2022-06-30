@@ -1,0 +1,31 @@
+.b-mainTitle {
+    background-color: #f8f3f4;
+    min-height: 188px;
+    position: relative;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: inherit;
+        flex-grow: 1;
+
+        &_pageCart {
+            @media (min-width: 768px) {
+                margin: 0 16px;
+                justify-content: flex-start;
+            }
+
+            @media (min-width: 1172px) {
+                max-width: 1140px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &__caption {
+        font-size: 24px;
+        line-height: 29px;
+        color: #F16D7F;
+    }
+}

@@ -1,0 +1,121 @@
+@import "../variables";
+@import "blocks/mainTitle";
+@import "blocks/prodCard";
+@import "blocks/button";
+@import "blocks/closeBtn";
+@import "blocks/form";
+@import "blocks/total";
+
+.b-mainTitle {
+    .menu {
+        height: initial;
+        overflow: initial;
+        z-index: 2;
+    }
+}
+
+
+.containerCart {
+    margin: 0 9px;
+    max-width: 1140px;
+
+    @media (min-width: $width_md) {
+          margin: 0 16px;
+    }
+
+      @media (min-width: $width_lg) {
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+    }
+}
+
+.leftWrap {
+    margin-top: 40px;
+
+    @media (min-width: $width_md) {
+        margin-top: 60px;
+    }
+
+    @media (min-width: $width_lg) {
+        margin-top: 96px;
+        margin-bottom: 128px;
+    }
+
+    .prodCardsWrap {
+        .b-prodCard:not(:first-child) {
+            margin-top: 32px;
+
+            @media (min-width: $width_md) {
+                margin-top: 40px;
+            }
+        }
+
+        @media (min-width: $width_lg) {
+            width: 652px;
+            justify-content: space-between;
+        }
+    }
+
+    .buttonsWrap {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+        @media (min-width: $width_md) {
+            margin-top: 62px;
+        }
+
+        @media (min-width: $width_lg) {
+            margin-top: 72px;
+            justify-content: space-between;
+        }
+
+        .b-button:first-child {
+            margin-right: 9px;
+
+            @media (min-width: $width_md) {
+                margin-right: 48px;
+            }
+        }
+    }
+}
+
+.rightWrap {
+    margin-bottom: 96px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+
+    @media (min-width: $width_md) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 64px;
+        margin-bottom: 128px;
+    }
+
+    @media (min-width: $width_lg) {
+        flex-direction: column;
+        justify-content: initial;
+        margin-top: 113px;
+        margin-bottom: 0;
+    }
+
+    .totalWrap {
+        margin-top: 48px;
+
+        @media (min-width: $width_md) {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 38px;
+        }
+
+        @media (min-width: $width_md) {
+            margin-top: 36px;
+        }
+
+        @media (min-width: $width_lg) {
+            margin-top: 57px;
+        }
+    }
+}

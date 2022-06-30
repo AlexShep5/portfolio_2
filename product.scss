@@ -1,0 +1,211 @@
+@import "_variables";
+
+.mainProduct {
+    position: relative;
+    background-color: #f7f7f7;
+    padding: 85px 0;
+    height: 624px;
+    box-sizing: border-box;
+    border: 1px solid #EAEAEA;
+
+    @media (min-width: $width_md) {
+        padding: 30px 0;
+    }
+
+    @media (min-width: $width_lg) {
+        padding: 11px 0 42px;
+        height: 777px;
+    }
+
+    .mainImg {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 auto;
+    }
+
+    .arrowLeft, .arrowRight {
+        position: absolute;
+        top: calc(100% / 2 - 47px);
+        z-index: 1;
+        width: 47px;
+        height: 47px;
+        background-color: rgba(42, 42, 42, 0.15);
+        background-repeat: no-repeat;
+        background-position: center center;
+        cursor: pointer;
+    }
+
+    .arrowLeft {
+        left: 0;
+        background-image: url(#{$productImg}/main_left.svg);
+
+        &:hover {
+            background-image: url(#{$productImg}/main_left_hover.svg);
+        }
+    }
+
+    .arrowRight {
+        right: 0;
+        background-image: url(#{$productImg}/main_right.svg);
+
+        &:hover {
+            background-image: url(#{$productImg}/main_right_hover.svg);
+        }
+    }
+}
+
+.collection {
+    border: 1px solid #EAEAEA;
+
+    @media (min-width:  $width_lg) {
+        min-height: 540px;
+        border: none;
+    }
+
+    .container {
+        position: relative;
+        margin: 0 25px;
+        max-width: 1140px;
+
+        @media (min-width:  $width_lg) {
+            margin: 0 auto;
+        }
+    }
+}
+
+.collectionContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+
+    @media (min-width: $width_lg) {
+        margin: 0 auto;
+        width: 1140px;
+        border: 1px solid #EAEAEA;
+        position: absolute;
+        left: 0;
+        top: - 60px;
+        z-index: 1;
+    }
+
+    .collectionRed {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #f16d7f;
+        margin-top: 64px;
+        margin-bottom: 12px;
+    }
+
+    .collectionLine {
+        width: 64px;
+        height: 3px;
+        background-color: #ef5b70;
+    }
+
+    .collectionTitle {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+        margin-top: 12px;
+    }
+
+    .collectionText {
+        max-width: 556px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #5e5e5e;
+        margin-top: 32px;
+    }
+
+    .collectionPrice {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 31px;
+        color: #EF5B70;
+        width: 175px;
+        padding: 32px 0;
+        text-align: center;
+        border-bottom: 1px solid #eaeaea;
+
+        @media (min-width: 768px) {
+            width: 640px;
+            padding-bottom: 64px;
+        }
+    }
+
+    .collectionFilter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        @media (min-width: 510px) {
+            max-width: 450px;
+        }
+    }
+
+    .collFilterItem {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        color: #6F6E6E;
+        margin-top: 50px;
+
+        @media (min-width: 768px) {
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        img {
+            margin: 0 8px 0 4px;
+
+            @media (min-width: $width_sm) {
+                margin: 0 20px 0 10px;
+            }
+        }
+    }
+
+    .buttonAddCart {
+        min-width: 212px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #ff6a6a;
+        background: none;
+        font-size: 16px;
+        line-height: 19px;
+        color: #f26376;
+        padding: 0 24px;
+        box-sizing: border-box;
+        margin-top: 64px;
+        margin-bottom: 64px;
+
+        img {
+            width: 26px;
+            height: 24px;
+            margin-right: 22px;
+            padding: 15px 0 9px;
+        }
+    }
+}
+
+.featuredItems {
+    margin-top: 64px;
+    margin-bottom: 64px;
+    gap: 0;
+
+    @media (min-width: 768px) {
+        gap: 16px;
+        margin-top: 128px;
+        margin-bottom: 128px;
+    }
+
+    @media (min-width: 1172px) {
+        gap: 30px;
+    }
+}

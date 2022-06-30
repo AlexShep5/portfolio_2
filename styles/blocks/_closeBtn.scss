@@ -1,0 +1,16 @@
+.b-closeBtn {
+    width: 10px;
+    height: 10px;
+    background: none;
+
+    @media (min-width: $width_md) {
+        width: 18px;
+        height: 18px;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
